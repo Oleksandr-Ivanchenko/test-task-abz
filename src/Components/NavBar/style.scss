@@ -22,6 +22,10 @@
     @include onPage-360 {
       margin: 0 16px;
     }
+
+    @include onPage-375 {
+      margin: 0 10px;
+    }
   }
 
   &__buttons {

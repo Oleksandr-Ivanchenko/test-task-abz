@@ -4,6 +4,12 @@
   }
 }
 
+@mixin onPage-375 {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
 @mixin onPage-768 {
   @media (max-width: 768px) {
     @content;
