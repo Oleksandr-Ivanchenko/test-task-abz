@@ -1,4 +1,4 @@
-Test task User application
+User application
 
 [DEMO LINK](https://Oleksandr-Ivanchenko.github.io/test-task-abz/)
 
