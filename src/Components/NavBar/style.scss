@@ -1,0 +1,32 @@
+@import "../../utils/mixins";
+
+.navigation {
+  background-color: white;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1170px;
+    height: 60px;
+
+    @include onPage-1024 {
+      margin: 0 60px;
+    }
+
+    @include onPage-768 {
+      margin: 0 32px;
+    }
+
+    @include onPage-360 {
+      margin: 0 16px;
+    }
+  }
+
+  &__buttons {
+    a {
+      text-decoration: none;
+    }
+  }
+}

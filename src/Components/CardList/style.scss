@@ -1,0 +1,51 @@
+@import "../../utils/mixins";
+@import "../../utils/vars";
+
+
+.userList {
+  max-width: 1170px;
+  margin: 140px auto;
+  word-break: break-all;
+  
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+    justify-content: center;
+
+    @include onPage-768 {
+      gap: 16px;
+    }
+
+    @include onPage-360 {
+      gap: 20px;
+    }
+
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $FontTitile;
+    line-height: $FontTitile;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.87);
+
+    @include onPage-360 {
+      margin: 50px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    margin-left: 10px;
+    height: 34px;
+
+    &--hidden {
+      display: none;
+    }
+  }
+}

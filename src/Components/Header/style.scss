@@ -1,0 +1,65 @@
+@import "../../utils/mixins";
+@import "../../utils/vars";
+
+
+.header {
+  width: 100%;
+  margin: 0 auto;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1170px;
+    height: 650px;
+    background: linear-gradient(
+      0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)
+      ), url(../../images/Pexels.jpeg) bottom no-repeat;
+    background-size: 250% 150%;
+
+    @include onPage-768 {
+      height: $HeaderImgSize;
+    }
+
+    @include onPage-360 {
+      text-align: justify;
+      height: $HeaderImgSize;
+      padding: 0 16px;
+    }
+  }
+
+  &__title {
+    max-width: 380px;
+    font-size: $FontTitile;
+    line-height: $FontTitile;
+    text-align: center;
+    color: $ColorTextHeader;
+    margin-bottom: 21px;
+  }
+
+  &__text {
+    max-width: 380px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: $ColorTextHeader;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    margin-left: 10px;
+    height: 34px;
+
+    a {
+      text-decoration: none;
+    }
+
+    @include onPage-360 {
+      margin-bottom: 32px;
+    }
+  }
+}

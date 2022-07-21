@@ -1,0 +1,48 @@
+@import "../../utils/mixins";
+@import "../../utils/vars";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 370px;
+  min-height: 254px;
+
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 10px;
+  background-color: white;
+
+  @include onPage-1024 {
+    width: 282px;
+  }
+
+  @include onPage-768 {
+    width: 344px;
+  }
+
+  @include onPage-1024 {
+    width: 328px;
+  }
+
+  &__photo {
+    width: $CardPhoto;
+    height: $CardPhoto;
+    border-radius: 50%;
+    margin-top: $CardMargin;
+  }
+
+  &__name {
+    margin-top: $CardMargin;
+  }
+
+  &__profession {
+    margin-top: $CardMargin;
+  }
+
+  &__number {
+    margin: 0 0 $CardMargin;
+  }
+}
