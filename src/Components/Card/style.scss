@@ -16,15 +16,15 @@
   background-color: white;
 
   @include onPage-1024 {
-    width: 282px;
+    width: 328px;
   }
 
   @include onPage-768 {
     width: 344px;
   }
 
-  @include onPage-1024 {
-    width: 328px;
+  @include onPage-360 {
+    width: 282px;
   }
 
   &__photo {

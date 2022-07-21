@@ -10,7 +10,6 @@
     margin: 0 auto;
     max-width: 1170px;
     height: 60px;
-
     @include onPage-1024 {
       margin: 0 60px;
     }
@@ -19,12 +18,12 @@
       margin: 0 32px;
     }
 
-    @include onPage-360 {
-      margin: 0 16px;
-    }
-
     @include onPage-375 {
       margin: 0 10px;
+    }
+    
+    @include onPage-360 {
+      margin: 0 16px;
     }
   }
 
